@@ -1,0 +1,111 @@
+:root{
+    
+    --be-foreground-base: 0 0 0;
+    --be-primary-light: 191 219 254;
+    --be-primary: 59 130 246;
+    --be-primary-dark: 37 99 235;
+    --be-on-primary: 255 255 255;
+    --be-background: 255 255 255;
+    --be-background-alt: 246 248 250;
+    --be-background-chip: 233 236 239;
+    --be-paper: 255 255 255;
+    --be-disabled-bg-opacity: 12%;
+    --be-disabled-fg-opacity: 26%;
+    --be-hover-opacity: 4%;
+    --be-focus-opacity: 12%;
+    --be-selected-opacity: 8%;
+    --be-text-main-opacity: 87%;
+    --be-text-muted-opacity: 60%;
+    --be-divider-opacity: 12%;
+
+}
+button:active,
+button:focus {
+outline: none !important; 
+}
+
+
+li:active,
+li:focus {
+outline: none !important; 
+}
+.loadingContent .onLoadingImage{
+display: inline-block;
+margin:20% 48% 0;
+}
+.loadingContent .onLoadingImage img{
+width: 80px;
+
+}
+
+.loadingContent  .text {
+font-size: 20px;
+font-weight: bold;
+color: #3281e7;
+display: inline;
+position: relative;
+}
+.loadingContent .icon-dot-loading{
+
+display: inline;
+position: absolute;
+top: -6px;
+left: 110%;
+}
+#leftNav.collapse {
+visibility: visible !important;
+} 
+.truncate-text {
+width: 120px; 
+white-space: nowrap; 
+overflow: hidden; 
+text-overflow: ellipsis; 
+text-align: start;
+}
+#loadingContent{
+
+}
+.collapse.show {
+display: block!important ;
+visibility: visible;
+}
+.collapse:not(.show){
+display: none !important ;
+}
+@media screen and ( min-width: 1024px) {
+#openLeftNav{
+visibility: hidden;
+}
+#leftNav{
+display: flex;
+}
+
+}
+@media screen and ( max-width: 768px ) {
+/* #openLeftNav{
+visibility: visible
+} */
+#root > div.relative.isolate.dashboard-grid.h-screen > div.flex.items-center.justify-end.gap-10.pl-14.pr-8.md\:pl-20.md\:pr-20.bg-primary.text-on-primary.border-b-primary.h-54.border-b.dashboard-grid-navbar > a{
+margin: 0 !important;
+}
+#root > div.relative.isolate.dashboard-grid.h-screen > div.flex.items-center.justify-end.gap-10.pl-14.pr-8.md\:pl-20.md\:pr-20.bg-primary.text-on-primary.border-b-primary.h-54.border-b.dashboard-grid-navbar > form{
+display: none;
+}
+
+#leftNav:not(.show) {
+display: none !important ;
+}
+#leftNav.show  {
+display: block !important;
+}
+#leftNav.show + div {
+opacity: 0%;
+}
+#leftNav.show + div +div {
+opacity: 10%;
+}
+#pathEntry > li > div >  button {
+font-size: 15px;
+}
+
+}
